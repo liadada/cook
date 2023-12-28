@@ -1,0 +1,57 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+h1, h2, h3, h4, .gugi-font {
+    font-family: 'Gugi', sans-serif;
+}
+/* 내비 영역 */
+.nav-link:hover,
+.nav-link.active {
+    color: rgb(198, 198, 39) !important;
+}
+
+/* 헤더영역 */
+header{
+    /* 1.배경이미지 */
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(184, 174, 174, 0.2)), url(../images/main-bg.jpg);
+    background-size: cover;
+    background-position: center top; 
+    background-attachment: fixed;
+}
+
+/* 서비스 섹션 */
+.card-hover:hover {
+    background-color: #ffc10726;
+    cursor: pointer;
+}
+/* sns 섹션 */
+#sns {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(184, 174, 174, 0.2)), url(../images/sns-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* 뉴스 섹션 */
+#news {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(184, 174, 174, 0.2)), url(../images/news-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+/* contact 섹션 */
+/* 폰트사이즈를 줄여서 텍스트가 넘치는 것 없애줌 */
+@media (min-width:768px) and (max-width:1024px){
+    .text {
+        font-size: 15px;
+    }
+}
